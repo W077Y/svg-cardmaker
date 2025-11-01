@@ -1,9 +1,48 @@
 python generate_cards.py --input .\card-db
+
 python collect_and_print.py `
   --cards ".\out_cards" `
-  --add "Potion_of_Healing=10" `
-  --add "Potion_of_Greater_Healing=5" `
+  --add "Potion_of_Healing=3" `
+  --add "Potion_of_Greater_Healing=3" `
   --add "Potion_of_Superior_Healing=3" `
-  --add "Potion_of_Supreme_Healing=1" `
+  --add "Potion_of_Supreme_Healing=3" `
   --out "cards_print.pdf" `
+  --add "Club=3"`
+  --add "Dagger=3"`
+  --add "Greatclub=3"`
+  --add "Handaxe=3"`
+  --add "Javelin=3"`
+  --add "Light_Hammer=3"`
+  --add "Mace=3"`
+  --add "Quarterstaff=3"`
+  --add "Sickle=3"`
+  --add "Spear=3"`
+  --add "Crossbow_Light=3"`
+  --add "Dart=3"`
+  --add "Shortbow=3"`
+  --add "Sling=3"`
+  --add "Battleaxe=3"`
+  --add "Flail=3"`
+  --add "Glaive=3"`
+  --add "Greataxe=3"`
+  --add "Greatsword=3"`
+  --add "Halberd=3"`
+  --add "Lance=3"`
+  --add "Longsword=3"`
+  --add "Maul=3"`
+  --add "Morningstar=3"`
+  --add "Pike=3"`
+  --add "Rapier=3"`
+  --add "Scimitar=3"`
+  --add "Shortsword=3"`
+  --add "Trident=3"`
+  --add "War_Pick=3"`
+  --add "Warhammer=3"`
+  --add "Whip=3"`
+  --add "Blowgun=3"`
+  --add "Crossbow_Hand=3"`
+  --add "Crossbow_Heavy=3"`
+  --add "Longbow=3"`
+  --add "Net=3"`
+  --add "Giant_Slayer_Warhammer=3"`
   --crop 

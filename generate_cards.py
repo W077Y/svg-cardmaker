@@ -45,7 +45,13 @@ def data_uri_for_image(path, mime="image/png"):
     b64 = base64.b64encode(data).decode("ascii")
     return f"data:{mime};base64,{b64}"
 
-def wrap_svg_text(text, width_chars=62, line_height=20, x=None):
+def wrap_svg_text(text, width_chars=62, line_height=20, x=None):  
+    if isinstance(text, list):
+        tmp = ""
+        for el in text:
+            tmp += el + "\n"
+        text = tmp
+
     text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     lines = []
     for para in text.split("\n"):
@@ -55,14 +61,14 @@ def wrap_svg_text(text, width_chars=62, line_height=20, x=None):
         for line in __import__("textwrap").wrap(para, width=width_chars, break_long_words=False):
             lines.append({"text": line, "newline": True})
     tspans = []
-    first = True
+    y = 0
     for entry in lines:
         t = entry["text"]
-        if first:
-            tspans.append(f'<tspan x="{x}" dy="0">{t}</tspan>')
-            first = False
-        else:
-            tspans.append(f'<tspan x="{x}" dy="{line_height}">{t}</tspan>')
+        tspans.append(f'<tspan x="{x}" dy="{y}">{t}</tspan>')
+        y = line_height
+        if t == "":
+            y += line_height
+
     return "\n    ".join(tspans)
 
 def build_frame_str(theme) -> str:
@@ -112,6 +118,7 @@ def build_rules_str(theme, rules, flavor) -> str:
     rules_str =  f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" ry="10" fill="{theme["rules_bg"]}" stroke="{theme["frame_border"]}" stroke-width="2"/>'
 
     (x, y, fs) = theme["rules_txt_rec"]
+
     rules_lines = wrap_svg_text(rules, width_chars=60, x=x, line_height=fs)
     rules_str += f'<text x="{x}" y="{y}" font-family="{theme["font_serif"]}" font-size="{fs}" fill="{theme["rules_fg"]}">{rules_lines}</text>'
 
