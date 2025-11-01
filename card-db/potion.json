@@ -1,0 +1,64 @@
+{
+  "cards": [
+    {
+      "name": "Potion of Healing",
+      "rarity": "Common",
+      "type_line": "Item \u2014 Consumable (potion)",
+      "rules_text": "A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action.",
+      "flavor_text": "Destilliertes Leben, gebunden an Erinnerung und Gebet - wer trinkt, vergisst für einen Herzschlag den Tod.",
+      "set_code": "MYR",
+      "collector": "001/999 U",
+      "author": "wschu",
+      "copyright": "\u00a9 Myrdell Homebrew 2025",
+      "art_path": "art/potion-of-healing.png",
+      "pt": "2d4+2",
+      "price": "50 GP",
+      "weight": "1/2 lb"
+    },
+    {
+      "name": "Potion of Greater Healing",
+      "rarity": "Uncommon",
+      "type_line": "Item \u2014 Consumable (potion)",
+      "rules_text": "A character who drinks the magical red fluid in this vial regains 4d4 + 4 hit points. Drinking or administering a potion takes an action.",
+      "flavor_text": "Aus den Tiefen der Schleieradern gewonnen, fließt in ihr nicht nur Leben - sondern der Wille, zu bestehen.",
+      "set_code": "MYR",
+      "collector": "002/999 U",
+      "author": "wschu",
+      "copyright": "\u00a9 Myrdell Homebrew 2025",
+      "art_path": "art/potion-of-greater-healing.png",
+      "pt": "4d4+4",
+      "price": "180 GP",
+      "weight": "1/2 lb"
+    },
+    {
+      "name": "Potion of Superior Healing",
+      "rarity": "Rare",
+      "type_line": "Item \u2014 Consumable (potion)",
+      "rules_text": "A character who drinks the magical red fluid in this vial regains 8d4 + 8 hit points. Drinking or administering a potion takes an action.",
+      "flavor_text": "Jeder Tropfen trägt das Echo uralter Zauber - vergossenes Blut, neu gewebt in Licht.",
+      "set_code": "MYR",
+      "collector": "003/999 U",
+      "author": "wschu",
+      "copyright": "\u00a9 Myrdell Homebrew 2025",
+      "art_path": "art/potion-of-superior-healing.png",
+      "pt": "8d4+8",
+      "price": "750 GP",
+      "weight": "1/2 lb"
+    },
+    {
+      "name": "Potion of Supreme Healing",
+      "rarity": "Very Rare",
+      "type_line": "Item \u2014 Consumable (potion)",
+      "rules_text": "A character who drinks the magical red fluid in this vial regains 10d4 + 20 hit points. Drinking or administering a potion takes an action.",
+      "flavor_text": "Nur einmal wagte ein Magier, sie zu brauen - und seitdem spricht niemand mehr von seinem Tod, nur von seinem Werk.",
+      "set_code": "MYR",
+      "collector": "004/999 U",
+      "author": "wschu",
+      "copyright": "\u00a9 Myrdell Homebrew 2025",
+      "art_path": "art/potion-of-supreme-healing.png",
+      "pt": "10d4+20",
+      "price": "8500 GP",
+      "weight": "1/2 lb"
+    }
+  ]
+}
