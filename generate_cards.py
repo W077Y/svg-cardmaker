@@ -200,8 +200,8 @@ def get_theme( name, rarity) -> dict:
         "flavor_txt_rec":(inner_padding + 18, rules_y + rules_h - 48, 24),
         "footer_txt_rec_l":(               inner_padding + 11, card_height - inner_padding - 6, 11),
         "footer_txt_rec_r":(card_width - 2*inner_padding - 11, card_height - inner_padding - 6, 11),
-        "opt_box": (inner_padding + inner_width, opt_y, 120, 54),
-        "opt_txt_rec":(inner_padding + inner_width - 60, opt_y + opt_h - 16, 24),
+        "opt_box": (inner_padding + inner_width, opt_y, 150, 54),
+        "opt_txt_rec":(inner_padding + inner_width - 75, opt_y + opt_h - 16, 24),
     }
 
     theme.update(name)

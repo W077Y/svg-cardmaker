@@ -769,8 +769,8 @@
       "author": "wschu",
       "copyright": "\u00a9 Myrdell Homebrew 2025",
       "art_path": "art/giant-slayer-warhammer.png",
-      "pt": "0",
-      "price": "1 GP",
+      "pt": "1d8+1",
+      "price": "25000 GP",
       "weight": "3 lb"
     }
   ]
